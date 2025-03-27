@@ -86,7 +86,9 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> int:
-    logging.basicConfig(format="[%(name)s] %(levelname)s: %(message)s", level=logging.INFO)
+    logging.basicConfig(
+        format="[%(name)s] %(levelname)s: %(message)s", level=logging.INFO
+    )
 
     images: set[str] = set()
 
